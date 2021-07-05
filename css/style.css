@@ -1,0 +1,99 @@
+  body {
+      border: 0px;
+      margin: 10px;
+    }
+
+    .bg {
+      position: relative;
+      top: 0px;
+      left: 40px;
+      height: 385px;
+      width: 150px;
+      display: inline-block;
+      background: #f5f5f5 url('../images/line-bg-sm.png') top left repeat-x;
+      -webkit-border-radius: 5;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
+
+
+    
+    .percentages {
+      position: absolute;
+
+    }
+
+    .percentages div {
+      font-family: 'open_sansregular', arial, sans-serif;
+      font-size: 0.8em;
+    }
+
+    .percentages .top {
+      position: relative;
+      top: 38px;
+    }
+
+    .percentages .middle {
+      position: relative;
+      top: 152px;
+    }
+
+    .percentages .bottom {
+      position: relative;
+      top: 272px;
+      left: 8px;
+
+    }
+
+
+
+
+    .slider-container {
+      /* force vertical */
+      transform: rotate(-90deg);
+      transform-origin: top right;
+      position: absolute;
+      width: 290px;
+      top: 35px;
+      left: -265px;
+
+    }
+
+
+    .slider {
+      /* IE */
+      appearance: none;
+      width: 100%;
+      height: 9px;
+      background: #99a0a7;
+      border: 3px solid #d0d3d6;
+      border-radius: 15px;
+      outline: none;
+    }
+
+
+    /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+
+    .slider::-webkit-slider-thumb {
+      /* Override default look */
+      appearance: none;
+      height: 25px;
+      width: 25px;
+      background: #b1cf36;
+      border: 2px solid #4bad80;
+      border-radius: 15px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+      appearance: none;
+      height: 25px;
+      width: 25px;
+      margin-left: -6px;
+      background: #b1cf36;
+      border: 2px solid #4bad80;
+      border-radius: 15px;
+      outline: none;
+      cursor: pointer;
+    }

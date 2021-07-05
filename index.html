@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <!--
+    * Slider for Diabotan iDetailAid
+    * 
+    * @triggers  'sliderChange'
+    * @exposes 'setValue'
+    -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+
+    //Expose methods for IDA to call in the package
+    window.setValue = (val) => {
+      document.querySelector('.slider').value = val;
+    }
+
+    window.getValue = (val) => {
+      return document.querySelector('.slider').value;
+    }
+
+    // setup the slider
+    window.addEventListener('load', () => {
+      window.ida = window.ida || { iframe: { trigger: (e, d) => console.log(`ida.iframe.trigger('${e},${d})`) } };
+
+      document.querySelector('.slider').addEventListener('input', (e) => {
+        ida.iframe.trigger('sliderChange', e.target.value);
+      });
+    });
+
+  </script>
+</head>
+
+<body>
+  <div class="container interactive">
+
+    <div class="percentages">
+      <div class="top">100%</div>
+      <div class="middle">50%</div>
+      <div class="bottom">0%</div>
+    </div>
+
+    <div class="bg">
+      <div class="slider-container">
+        <input type="range" min="0" max="100" value="0" class="slider">
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
