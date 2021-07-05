@@ -51,9 +51,9 @@ The following text in a text area would render the slide value.
 ```
 
 ## Actions Menu
-If you declare the events the HTML package exposes in the [manifest.json](https://docs.idetailaid.co.uk/dev-docs/html-packages/#the-manifestjson-file) file, then a non technical user can select that as an `Action` in the iDetailAid editor.
+If you declare the events in the [manifest.json](https://docs.idetailaid.co.uk/dev-docs/html-packages/#the-manifestjson-file) file, then a non technical user can select that as an `Action` in the iDetailAid editor.
 
-They can then pick the corresponding action to trigger, such as Navigate to a slide.
+They can then pick the corresponding action to trigger, such as Navigate to a slide, using the user interface, rather than code.
 
 
 
