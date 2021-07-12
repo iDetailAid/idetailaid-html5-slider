@@ -7,7 +7,7 @@ Placing more of the logic in the slide code editor gives you greater flexibility
 HTML packages in a iDetailAid can send events and trigger actions in the containing slide.  You can either listen for the events directly via code in the slide code editor, or you can expose names actions to appear in the actions drop down menu for non technical users.
 
 # Docs
-For more information see the following hep docs.
+For more information see the following help docs.
 
 [Slide code editor](https://docs.idetailaid.co.uk/dev-docs/code-editor/)   
 
